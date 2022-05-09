@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 SENTINEL_KEY = 'OTHERS'
-THRESHOLD_EQUAL = 15
+THRESHOLD_EQUAL = 3
 
 
 def _get_model(json_object: typing.Dict) -> str:
@@ -108,12 +108,6 @@ def _is_equal_objects(object_1, object_2):
     processor_1 = _get_processor(json_object=object_1)
     processor_2 = _get_processor(json_object=object_2)
 
-    memory_1 = _get_memory(json_object=object_1)
-    memory_2 = _get_memory(json_object=object_2)
-
-    color_1 = _get_color(json_object=object_1)
-    color_2 = _get_color(json_object=object_2)
-
     protect_1 = _get_protect(json_object=object_1)
     protect_2 = _get_protect(json_object=object_2)
 
@@ -124,8 +118,6 @@ def _is_equal_objects(object_1, object_2):
         [
             _is_equal_params(model_1, model_2, (3, 2, 0)),
             _is_equal_params(processor_1, processor_2, (2, 1, 0)),
-            _is_equal_params(memory_1, memory_2, (5, 2, 0)),
-            _is_equal_params(color_1, color_2, (5, 2, 0)),
             _is_equal_params(protect_1, protect_2, (2, 1, 0)),
             _is_equal_params(os_version_1, os_version_2, (2, 1, 0)),
         ]

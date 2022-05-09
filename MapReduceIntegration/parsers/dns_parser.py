@@ -9,7 +9,7 @@ PRODUCT_URL = 'https://www.dns-shop.ru{product_url}'
 CHARACTERISTIC_TITLE = 'product-characteristics__spec-title'
 CHARACTERISTIC_VALUE = 'product-characteristics__spec-value'
 
-RESULT_FILE = 'raw_data/DNS_raw_data.txt'
+RESULT_FILE = 'result/DNS_raw_data.txt'
 
 
 def main():

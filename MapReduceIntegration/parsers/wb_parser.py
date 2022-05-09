@@ -10,7 +10,7 @@ WB_BASE_URL = (
 )
 WB_PRODUCT_URL = 'https://wbx-content-v2.wbstatic.net/ru/{product_id}.json'
 
-RESULT_FILE = 'raw_data/WB_raw_data.txt'
+RESULT_FILE = 'result/WB_raw_data.txt'
 
 
 def main():
